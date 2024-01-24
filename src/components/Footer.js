@@ -25,84 +25,76 @@ const FooterComp = () => {
             behavior: "smooth"
         })
     }
-  return (
-    <>
-          <Box sx={{ mt: "70px", p: "15px 30px", bgcolor: "black" }}>
-                    <Grid container sx={{ p: "5px 10px 20px 10px" }}>
-                        <Grid item lg={4} md={4} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
-                            <Box sx={{ mt: "20px" }}>
-                                {/* <Typography sx={{ fontSize: "25px", color: "white" }}>
-                                    LuckyQuiz
-                                </Typography> */}
-                                <Grid container>
-                                <Grid item  sx={{ display: 'flex', cursor: "pointer" }} onClick={() => { navigate('/') }}>
-                                <Typography sx={{ color: 'lightgreen', fontSize: '22px', fontWeight: '800' }}>L</Typography>
-                                <Typography sx={{ color: 'yellow', fontSize: '22px', fontWeight: '800' }}>u</Typography>
-                                <Typography sx={{ color: 'skyblue', fontSize: '22px', fontWeight: '800' }}>c</Typography>
-                                <Typography sx={{ color: 'white', fontSize: '22px', fontWeight: '800' }}>k</Typography>
-                                <Typography sx={{ color: '#ef6c00', fontSize: '22px', fontWeight: '800' }}>y</Typography>
-                                <Typography sx={{ color: 'lightpink', fontSize: '22px', fontWeight: '800' }}>Q</Typography>
-                                <Typography sx={{ color: 'orange', fontSize: '22px', fontWeight: '800' }}>u</Typography>
-                                <Typography sx={{ color: 'lightgrey', fontSize: '22px', fontWeight: '800' }}>i</Typography>
-                                <Typography sx={{ color: 'white', fontSize: '22px', fontWeight: '800' }}>z</Typography>
-                            </Grid>
-                                </Grid>
-                                <Typography sx={{ color: "white" }}>
-                                    BLOCK 231C, KACHARUPURIA, BUGDOI BRIDGE,JORHAT,785001,ASSAM
-                                </Typography>
-
-                                <Typography sx={{ mt: "15px", color: "white" }}>
-                                    <span>Phone:</span>+91 -8099851924
-                                </Typography>
-                                <Typography sx={{ color: "#757575", color: "white" }}>
-                                    <span >Email:</span>DAICHSENYO@GMAIL.COM
-                                </Typography>
-                            </Box>
-                        </Grid>
-                        <Grid item lg={3} md={3} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
-                            <Box sx={{ mt: "20px" }}>
-                                <Typography sx={{ fontSize: "25px", color: "#212121", color: "white" }}>
-                                    Useful Links
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Home
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/about') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />About us
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Team
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/terms') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Terms of Use
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/privacy') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Privacy Policy
-                                </Typography>
-                            </Box>
-                        </Grid>
-                        <Grid item lg={5} md={5} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
-                            <Box sx={{ mt: "20px" }}>
-                                <Typography align='center' sx={{ fontSize: "25px", color: "#212121", color: "white" }}>
-                                    Our Social Networks
-                                </Typography>
-                                <Typography align='center' sx={{ mt: "15px", color: "white" }}>
-                                    Connect with us via our Social Network Accounts
-                                </Typography>
-                                <Box sx={{ display: "flex", justifyContent: "Center" }}>
-                                    <Box>
-                                        <TwitterIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#2979ff" }, m: "10px" }} />
-                                        <FacebookIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#1e88e5" }, m: "10px" }} />
-                                        <InstagramIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#ff1744" }, m: "10px" }} />
-                                    </Box>
+    return (
+        <>
+            <Box sx={{ mt: "70px", p: "15px 30px", bgcolor: "black"}}>
+                <Grid container sx={{ p: "5px 10px 20px 10px"}}>
+                    <Grid item lg={4} md={4} sm={6} xs={12} sx={{ display:"flex",justifyContent:{lg: "center", md: "center", sm: "left", xs: "left" } }}>
+                        <Box sx={{ mt: "20px" }}>
+                            <Typography sx={{ fontSize: "25px", color: "white" }}>
+                                LuckyQuiz
+                            </Typography>
+                            <Typography sx={{ color: "white" }}>
+                                BLOCK 231C, KACHARUPURIA, BUGDOI BRIDGE,JORHAT,785001,ASSAM
+                            </Typography>
+                            <Typography sx={{ mt: "15px", color: "white" }}>
+                                <span>Phone:</span>+91 -8099851924
+                            </Typography>
+                            <Typography sx={{ color: "#757575", color: "white" }}>
+                                <span >Email:</span>DAICHSENYO@GMAIL.COM
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid item lg={3} md={3} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
+                        <Box sx={{ mt: "20px" }}>
+                            <Typography sx={{ fontSize: "25px", color: "#212121", color: "white" }}>
+                                Useful Links
+                            </Typography>
+                            <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/') }}>
+                                <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Home
+                            </Typography>
+                            <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/about') }}>
+                                <KeyboardArrowRightIcon sx={{ mr: "5px" }} />About us
+                            </Typography>
+                            <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/') }}>
+                                <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Team
+                            </Typography>
+                            <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/terms') }}>
+                                <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Terms of Use
+                            </Typography>
+                            <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/privacy') }}>
+                                <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Privacy Policy
+                            </Typography>
+                            <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/return') }}>
+                                <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Return,Refund & Cancellation Policy
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid item lg={5} md={5} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
+                        <Box sx={{ mt: "20px" }}>
+                            <Typography align='center' sx={{ fontSize: "25px", color: "#212121", color: "white" }}>
+                                Our Social Networks
+                            </Typography>
+                            <Typography align='center' sx={{ mt: "15px", color: "white" }}>
+                                Connect with us via our Social Network Accounts
+                            </Typography>
+                            <Box sx={{ display: "flex", justifyContent: "Center" }}>
+                                <Box>
+                                    <TwitterIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#2979ff" }, m: "10px" }} />
+                                    <FacebookIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#1e88e5" }, m: "10px" }} />
+                                    <InstagramIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#ff1744" }, m: "10px" }} />
                                 </Box>
                             </Box>
-                        </Grid>
+                        </Box>
                     </Grid>
-                </Box>
+                </Grid>
+            </Box>
+            <Box sx={{ width: "100%" }}>
+                <Typography align='center' sx={{ color: "black",p:"7px",fontSize:{lg:"15px",md:"15px",sm:"13px",xs:"12px"} }}>Copyright ©️ - Luckyquiz Private Limited | All rights reserved</Typography>
+            </Box>
 
-    </>
-  )
+        </>
+    )
 }
 
 export default FooterComp
