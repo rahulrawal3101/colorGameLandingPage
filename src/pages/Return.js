@@ -14,12 +14,7 @@ import '../master.css';
 
 
 
-
-
-
-
-
-const PrivacyPolicy = () => {
+const Return= () => {
 
     const navigate = useNavigate()
     useEffect(() => {
@@ -33,7 +28,8 @@ const PrivacyPolicy = () => {
             behavior: "smooth"
         })
     }
-    // 
+
+
     return (
         <>
             <Container maxWidth={'xl'} disableGutters >
@@ -124,135 +120,60 @@ const PrivacyPolicy = () => {
                                     <Paper sx={{ p: "15px" }}>
 
                                         <Typography align='center' sx={{ color: "#1976d2", fontSize: "35px", letterSpacing: "2px", fontWeight: "900" }}>
-                                            Privacy Policy
+                                           Return, Refund & Cancellation Policy
                                         </Typography>
-                                        <Typography sx={{ fontSize: "15px", mt: "7px" }}>
-                                            This Privacy Policy governs the manner in which<a href=''>http://www.luckyquiz.in/</a>  collects,
-                                            uses, maintains and discloses information collected from users (each, a User) of
-                                            the <a href=''>http://www.luckyquiz.in/</a> website (Site). This privacy policy applies to the Site,
-                                            all products and services offered by <a href=''>http://www.luckyquiz.in/</a>.
 
-
-                                        </Typography>
 
                                         <Grid container>
-                                            <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>Personal Identification Information
+                                          <Grid item xs={12} sx={{ mt: '14px' }}>
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>Our focus is complete customer satisfaction. In the event, that there is an error in the services provided, we will refund the money, provided the reasons are genuine and proved after investigation. Please read the rules of each tournament before participating, it provides all the details about the services or the product you purchase. Please note that this Return, Refund and Cancellation Policy is part of the Terms and Conditions above.
                                                 </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>We may collect personal identification information from Users in a variety of ways,
-                                                    including, but not limited to, when Users visit our site, subscribe to the newsletter, and
-                                                    in connection with other activities, services, features or resources we make available
-                                                    on our Site. Users may be asked for, as appropriate, name, email address. Users may,
-                                                    however, visit our Site anonymously. We will collect personal identification
-                                                    information from Users only if they voluntarily submit such information to us. Users
-                                                    can always refuse to supply personally identification information, except that it may
-                                                    prevent them from engaging in certain Site related activities.
+                                            </Grid>
+                                            <Grid item xs={12} sx={{ mt: '14px' }}>
+                                            <Typography sx={{ fontSize: { lg: '24px', md: '23px', sm: '20px', xs: '20px', fontWeight: 'bold', } }}>Our Policy for the cancellation and refund will be as follows:
+                                                </Typography>
+                                            </Grid>
+                                            <Grid item xs={12} sx={{ mt: '14px' }}>
+                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>1. Return and Cancellation Policy</Typography>
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>For Cancellations please contact us at <a href=''>help@luckyquiz.com.</a>We do not cancel registrations once entered, however, in case of exceptional circumstances wherein the fault may lie with the payment gateway or from our side, we will cancel your participation on request and refund the money to you within a reasonable amount of time.
+                                                </Typography>
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>In case we cancel your participation at any tournament as a result of this, we will return your participation fee to you within a reasonable amount of time for you to redeem the same by playing other tournaments on LUCKYQUIZ.
                                                 </Typography>
 
                                             </Grid>
                                             <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>Non-personal Identification Information
+                                            <Typography sx={{ fontSize: { lg: '24px', md: '23px', sm: '20px', xs: '20px', fontWeight: 'bold', } }}>No other cancellations will be made by Luckyquiz.
+                                                </Typography>
+                                            </Grid>
+                                            <Grid item xs={12} sx={{ mt: '14px' }}>
+                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>2.Refund Policy
 
                                                 </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>We may collect non-personal identification information about Users whenever they
-                                                    interact with our Site. Non-personal identification information may include the
-                                                    browser name, the type of computer and technical information about Users means of
-                                                    connection to our Site, such as the operating system and the Internet service providers
-                                                    utilized and other similar information
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>We will try our best to create the best user experience for our users.
+                                                </Typography>
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>If paid by credit card, refunds will be issued to the original credit card provided at the time of purchase and in case of payments made through a payment gateway, payments refund will be made to the same account.
                                                 </Typography>
 
                                             </Grid>
                                             <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>Web Browser Cookies
+                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>3.Deposits
 
                                                 </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>Our Site may use “cookies” to enhance User experience. User’s web browser places
-                                                    cookies on their hard drive for record-keeping purposes and sometimes to track
-                                                    information about them. User may choose to set their web browser to refuse cookies,
-                                                    or to alert you when cookies are being sent. If they do so, note that some parts of the
-                                                    Site may not function properly.
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>1. In order to comply with extant law relating to deposit regulations, please note that the user must withdraw any idle balance lying in their 'Winnings Wallet' within 365 days of having won that amount. Similarly, users must use any money in their 'Deposit Cash Wallet' within 365 days. If not, the said amounts will have to be forfeited.
                                                 </Typography>
 
                                             </Grid>
                                             <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>How We Use Collected Informations?
+                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>Return, Refund & Cancellation
                                                 </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>http://www.luckyquiz.in/ collects and uses Users personal information for the
-                                                    following purposes:<br />
-
-
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>– To improve our Site
-                                                    we continuously strive to improve our website offerings based on the information and
-                                                    feedback we receive from you. </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>– To improve customer service
-                                                    Your information helps us to more effectively respond to your customer service
-                                                    requests and support needs.</Typography>
-
-                                            </Grid>
-                                            <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>How We Protect Your Information?
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>We adopt appropriate data collection, storage and processing practices and security
-                                                    measures to protect against unauthorized access, alteration, disclosure or destruction
-                                                    of your personal information, username, password, transaction information and data
-                                                    stored on our Site.
-                                                </Typography><br />
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>Sensitive and private data exchange between the Site and its Users happens over a
-                                                    SSL secured communication channel and is encrypted and protected with digital
-                                                    signatures. Our Site is also in compliance with PCI vulnerability standards in order to
-                                                    create as secure of an environment as possible for Users.
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>DISCLAIMER LUCKYQUIZ is the owner of, and reserves all rights to the assets, content, services, information, and products and graphics in the website except any third party content.
                                                 </Typography>
 
-                                            </Grid>
-                                            <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>Sharing Your Personal Information
-
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>We do not sell, trade, or rent Users personal identification information to others. We
-                                                    may share generic aggregated demographic information not linked to any personal
-                                                    identification information regarding visitors and users with our business partners,
-                                                    trusted affiliates and advertisers for the purposes outlined above.
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>LUCKYQUIZ refuses to acknowledge or represent about the accuracy or completeness or reliability or adequacy of the website's third party content. These content, materials, information, services, and products in this website, including text, graphics, and links, are provided "AS IS" and without warranties of any kind, whether expressed or implied.
                                                 </Typography>
 
-                                            </Grid>
-
-                                            <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>Compliance with Children’s Online Privacy Protection Act
-
+                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>LUCKYQUIZ is the biggest gaming app in India based on the number of unity games, special tournaments and formats. Luckyquiz  is available only to people above 18 years of age. Luckyquiz is available in all states where permissible by extant law. Consequently, users located in some states may not be able to access our App or its contests. For an updated list of such states, please download the App
                                                 </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>Protecting the privacy of the very young is especially important. For that reason, we
-                                                    never collect or maintain information at our Site from those we actually know are
-                                                    under 13, and no part of our website is structured to attract anyone under 13.
-                                                </Typography>
-
-                                            </Grid>
-
-                                            <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>Changes to This Privacy Policy
-
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}><a href=''>http://www.luckyquiz.in/</a> has the discretion to update this privacy policy at any time.
-                                                    When we do, we will post a notification on the main page of our Site. We encourage
-                                                    Users to frequently check this page for any changes to stay informed about how we
-                                                    are helping to protect the personal information we collect. You acknowledge and
-                                                    agree that it is your responsibility to review this privacy policy periodically and
-                                                    become aware of modifications.
-
-                                                </Typography>
-
-                                            </Grid>
-
-                                            
-                                            <Grid item xs={12} sx={{ mt: '14px' }}>
-                                                <Typography sx={{ fontSize: { lg: '20px', md: '20px', sm: '18px', xs: '18px', fontWeight: 'bold', } }}>You’re Consent
-
-
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '15px', mt: '8px' }}>By using our site, you consent to our privacy policy.
-
-                                                </Typography>
-
                                             </Grid>
                                         </Grid>
 
@@ -367,67 +288,9 @@ const PrivacyPolicy = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                {/* <Box sx={{ mt: "70px", p: "15px 30px", bgcolor: "black" }}>
-                    <Grid container sx={{ p: "5px 10px 20px 10px" }}>
-                        <Grid item lg={4} md={4} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
-                            <Box sx={{ mt: "20px" }}>
-                                <Typography sx={{ fontSize: "25px", color: "white" }}>
-                                    LuckyQuiz
-                                </Typography>
-                                <Typography sx={{ color: "white" }}>
-                                    BLOCK 231C, KACHARUPURIA, BUGDOI BRIDGE,JORHAT,785001,ASSAM
-                                </Typography>
 
-                                <Typography sx={{ mt: "15px", color: "white" }}>
-                                    <span>Phone:</span>+91 -8099851924
-                                </Typography>
-                                <Typography sx={{ color: "#757575", color: "white" }}>
-                                    <span >Email:</span>DAICHSENYO@GMAIL.COM
-                                </Typography>
-                            </Box>
-                        </Grid>
-                        <Grid item lg={3} md={3} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
-                            <Box sx={{ mt: "20px" }}>
-                                <Typography sx={{ fontSize: "25px", color: "#212121", color: "white" }}>
-                                    Useful Links
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Home
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/about') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />About us
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Team
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Terms of Use
-                                </Typography>
-                                <Typography sx={{ color: "#757575", display: "flex", alignItems: "center", mt: "10px", cursor: "pointer", color: "white" }} onClick={() => { handleNavigator('/privacy') }}>
-                                    <KeyboardArrowRightIcon sx={{ mr: "5px" }} />Privacy Policy
-                                </Typography>
-                            </Box>
-                        </Grid>
-                        <Grid item lg={5} md={5} sm={6} xs={12} sx={{ display: "flex", justifyContent: { lg: "center", md: "center", sm: "left", xs: "left" } }}>
-                            <Box sx={{ mt: "20px" }}>
-                                <Typography align='center' sx={{ fontSize: "25px", color: "#212121", color: "white" }}>
-                                    Our Social Networks
-                                </Typography>
-                                <Typography align='center' sx={{ mt: "15px", color: "white" }}>
-                                    Connect with us via our Social Network Accounts
-                                </Typography>
-                                <Box sx={{ display: "flex", justifyContent: "Center" }}>
-                                    <Box>
-                                        <TwitterIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#2979ff" }, m: "10px" }} />
-                                        <FacebookIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#1e88e5" }, m: "10px" }} />
-                                        <InstagramIcon sx={{ cursor: "pointer", fontSize: "40px", color: "white", "&:hover": { color: "#ff1744" }, m: "10px" }} />
-                                    </Box>
-                                </Box>
-                            </Box>
-                        </Grid>
-                    </Grid>
-                </Box> */}
-                <FooterComp/>
+                {/* footer sec */}
+                <FooterComp />
 
 
 
@@ -436,4 +299,4 @@ const PrivacyPolicy = () => {
     )
 }
 
-export default PrivacyPolicy
+export default Return

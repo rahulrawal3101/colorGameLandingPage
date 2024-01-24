@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndCondition from "./pages/TermsAndConditon";
 import ContactUs from "./pages/ContactUs";
+import Return from "./pages/Return";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/privacy" element={<PrivacyPolicy/>}/>
           <Route exact path="/terms" element={<TermsAndCondition/>}/>
           <Route exact path="/contact" element={<ContactUs/>}/>
+          <Route exact path="/return" element={<Return/>}/>
 
 
 

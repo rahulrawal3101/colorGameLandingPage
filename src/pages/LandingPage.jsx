@@ -105,8 +105,12 @@ const LandingPage = () => {
                                         <Typography sx={{ fontSize: '17px', cursor: "pointer", color: 'white' }}>Gallery</Typography>
                                     </Box>
                                     <Box sx={{ width: '20%', color: '#5c6bc0', display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-                                        <Typography sx={{ fontSize: '17px', cursor: "pointer", color: 'white' }} onClick={()=>{navigate('/contact');window.scrollTo({top:0,
-                                        behavior:"smooth"})}}>Contact</Typography>
+                                        <Typography sx={{ fontSize: '17px', cursor: "pointer", color: 'white' }} onClick={() => {
+                                            navigate('/contact'); window.scrollTo({
+                                                top: 0,
+                                                behavior: "smooth"
+                                            })
+                                        }}>Contact</Typography>
                                     </Box>
                                     <Box sx={{ width: '20%', color: '#5c6bc0', display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
                                         <Button variant='contained' sx={{ bgcolor: '#5c6bc0', color: 'white', fontSize: '13px', borderRadius: '10px' }}>Download</Button>
@@ -126,18 +130,18 @@ const LandingPage = () => {
                 </AppBar>
                 <Grid container sx={{ justifyContent: "center", alignItems: "center", bgcolor: "#f1f3f6", overflow: "hidden", pt: { lg: "60px", md: "60px", sm: "60px", xs: "55px" } }}>
                     {/* one  */}
-                    <Grid container sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap-reverse', backgroundImage: `url(${black})`, backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', p: '20px 8px' }}>
-                        <Grid item lg={6} md={6} sm={12} xs={12} data-aos='fade-up' sx={{ mt: '-30px' }}  >
+                    <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${black})`, backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%', height: '400px', }}>
+                        <Grid item lg={6} md={6} sm={12} xs={12} data-aos='fade-up'   >
                             <Typography sx={{ color: '#f5f5f5', fontSize: { lg: '30px', md: '28px', sm: '25px', xs: '23px' }, fontWeight: '800', textAlign: 'center' }}>Luckyquiz is one of the best skill based  game in india.</Typography>
-                            <Typography sx={{ fontSize: '15px', mt: '5px', textAlign: 'center', color: '#aed581' }}>Luckyquiz allows you to earn money by applying ur skill The amount earned can be withdraw easily.</Typography>
+                            <Typography sx={{ fontSize: '15px', mt: '5px', textAlign: 'center', color: '#aed581' }}>"Luckyquiz enables you to earn iq by applying your skills. The iq earned can be withdrawn easily."</Typography>
                         </Grid>
 
-                        <Grid item data-aos='fade-up' lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        {/* <Grid item data-aos='fade-up' lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <Box sx={{ width: { lg: '45%', md: '70%', sm: '50%', xs: '75%' }, height: { lg: '500px', md: "470px", sm: "430px", xs: "390px" } }}>
                                 <img src={game5} width={'100%'} height={'100%'} alt='game1' style={{ borderRadius: '10px' }} />
                             </Box>
 
-                        </Grid>
+                        </Grid> */}
 
 
                     </Grid>
@@ -150,9 +154,9 @@ const LandingPage = () => {
                         </Grid>
                         <Grid item xs={11.8} sx={{ textAlign: 'center' }}>
 
-                            <Typography sx={{ color: "black", mt: "16px", fontWeight: 'bold', fontSize: { lg: '17px', md: '16px', sm: '15px', xs: '15px' } }}>Luckyquiz is one of the Best Quiz base game .Luckyquiz is a calculation base game .Many people have shared their personal experience  with quiz games.You can play online by downloading the Luckyquiz game .and u can earn 20to 30k Iq monthly by u r anaylitic skills.</Typography>
+                            <Typography sx={{ color: "#212121", mt: "16px", fontWeight: 'bold', fontSize: { lg: '17px', md: '16px', sm: '15px', xs: '15px' } }}>"Luckyquiz is one of the best quiz-based games. It is a calculation-based game where many people have shared their personal experiences with quiz games. You can play online by downloading the Luckyquiz game, and you can earn 20k to 30k IQ monthly using your analytical skills."</Typography>
                         </Grid>
-                        <Grid container sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap-reverse', mt: "25px" }}>
+                        <Grid container sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', flexWrap: 'wrap-reverse', mt: "25px" }}>
                             <Grid item lg={6} md={6} sm={12} xs={12} >
 
                                 <Grid container sx={{ padding: '2px', mt: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -163,38 +167,41 @@ const LandingPage = () => {
 
                                         <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
                                             <CircleIcon sx={{ fontSize: '12px', color: '#1565c0' }} />
-                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>Start quiz with only 1 rs</Typography>
+                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>Start quiz with only 1 Iq</Typography>
                                         </Box>
 
                                         <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', mt: '15px' }}>
                                             <CircleIcon sx={{ fontSize: '12px', color: '#1565c0' }} />
-                                            <Typography sx={{ fontSize: '15px', ml: '8px', fontWeight: 'bold', }}>Fast Withdrawal (Most of the time, money comes to your account within 1 hour)</Typography>
+                                            {/* <Typography sx={{ fontSize: '15px', ml: '8px', fontWeight: 'bold', }}>Fast Withdrawal (Most of the time, money comes to your account within 1 hour)</Typography> */}
+                                            <Typography sx={{ fontSize: '15px', ml: '8px', fontWeight: 'bold',color:'#212121' }}>Fast Withdrawal</Typography>
+
                                         </Box>
 
                                         <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', mt: '15px' }}>
                                             <CircleIcon sx={{ fontSize: '12px', color: '#1565c0' }} />
-                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>No Withdrawal Fee (You can withdraw as much as you want in this game without any withdrawal fee)</Typography>
+                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold',color:'#212121' }}>No Withdrawal Fee (You can withdraw as much as you want in this game without any withdrawal fee)</Typography>
                                         </Box>
 
                                         <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', mt: '15px' }}>
                                             <CircleIcon sx={{ fontSize: '12px', color: '#1565c0' }} />
-                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>24/7 Customer Service</Typography>
+                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold',color:'#212121' }}>24/7 Customer Service</Typography>
                                         </Box>
 
                                         <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', mt: '15px' }}>
                                             <CircleIcon sx={{ fontSize: '12px', color: '#1565c0' }} />
-                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>Very Good Promotion Mission (Earn More than 4 Lakh for Complete Promotion Task)</Typography>
+                                            {/* <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>Very Good Promotion Mission (Earn More than 4 Lakh for Complete Promotion Task)</Typography> */}
+                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold',color:'#212121' }}>Very Good Promotion Mission </Typography>
                                         </Box>
 
                                         <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', mt: '15px' }}>
                                             <CircleIcon sx={{ fontSize: '12px', color: '#1565c0' }} />
-                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>Promotion Bonus Upto 5 Levels</Typography>
+                                            <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold',color:'#212121' }}>Promotion Bonus Upto 5 Levels</Typography>
                                         </Box>
 
-                                        <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', mt: '15px' }}>
+                                        {/* <Box data-aos='fade-up' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', mt: '15px' }}>
                                             <CircleIcon sx={{ fontSize: '12px', color: '#1565c0' }} />
                                             <Typography sx={{ fontSize: '14px', ml: '8px', fontWeight: 'bold', }}>Every two months, new events come in which you can participate and Earn Up to 6 Lakh.</Typography>
-                                        </Box>
+                                        </Box> */}
 
                                     </Grid>
 
@@ -208,12 +215,12 @@ const LandingPage = () => {
 
                             </Grid> */}
 
-                            <Grid item data-aos='fade-left' lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: { lg: '0px', md: '0px', sm: '10px', xs: '10px' } }}>
+                            {/* <Grid item data-aos='fade-left' lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: { lg: '0px', md: '0px', sm: '10px', xs: '10px' } }}>
                                 <Box sx={{ width: { lg: '45%', md: '70%', sm: '50%', xs: '75%' }, height: { lg: '500px', md: "470px", sm: "430px", xs: "390px" } }}>
                                     <img src={game3} width={'100%'} height={'100%'} alt='game5' style={{ borderRadius: '10px' }} />
                                 </Box>
 
-                            </Grid>
+                            </Grid> */}
 
                         </Grid>
 
@@ -223,7 +230,7 @@ const LandingPage = () => {
                     </Grid>
 
                     {/* three  */}
-                    <Grid container sx={{ padding: { lg: '10px 20px', md: "10px 20px", sm: "10px 10px", xs: "0px" }, bgcolor: "black", mt: '10px', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+                    {/* <Grid container sx={{ padding: { lg: '10px 20px', md: "10px 20px", sm: "10px 10px", xs: "0px" }, bgcolor: "black", mt: '10px', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
                         <Grid item xs={12} sx={{ textAlign: 'center', }} >
                             <Typography sx={{ color: '#1565c0', fontSize: { lg: '32px', md: '28px', sm: '25px', xs: '24px' }, fontWeight: '800', mt: '10px' }}>Our Games</Typography>
                         </Grid>
@@ -282,7 +289,7 @@ const LandingPage = () => {
 
 
 
-                    </Grid>
+                    </Grid> */}
 
 
 
@@ -301,147 +308,109 @@ const LandingPage = () => {
                             </Grid>
 
 
-                            <Grid item xs={12} sx={{ mt: "10px", display: "flex", justifyContent: "center" }}>
-                                <Grid container xs={12} sm={12} md={10} lg={10} sx={{ p: "15px", bgcolor: "white", borderRadius: "30px", boxShadow: "-1px 2px 11px -4px rgba(0,0,0,0.75)" }} wrap='wrap-reverse'>
-                                    <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: { xs: "center", sm: "", md: "", lg: "" }, alignItems: 'center' }} data-aos="fade-right">
+                            <Grid item xs={12} sx={{ mt: "10px", display: "flex", justifyContent: "center", }}>
+                                <Grid container xs={12} sm={12} md={10} lg={10} sx={{ p: "15px", bgcolor: "white", borderRadius: "30px", boxShadow: "-1px 2px 11px -4px rgba(0,0,0,0.75)" }} >
+                                    {/* <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: { xs: "center", sm: "", md: "", lg: "" }, alignItems: 'center' }} data-aos="fade-right">
                                         <Box sx={{ width: { lg: '60%', md: '75%', sm: '55%', xs: '88%' }, height: { lg: '500px', md: "470px", sm: "430px", xs: "390px" } }}>
 
                                             <img src={game7} alt='signup' height={"100%"} width={"100%"} style={{ borderRadius: '10px' }} />
                                         </Box>
-                                    </Grid>
+                                    </Grid> */}
 
-                                    <Grid item xs={12} sm={12} md={6} lg={6} data-aos="fade-up" sx={{ display: "flex", alignItems: "center", justifyContent: { lg: 'flex-start', md: "flex-start", sm: "center", xs: "center" } }}>
+                                    <Grid item xs={12} sm={12} md={12} lg={12} data-aos="fade-up" sx={{ display: "flex", alignItems: "center", justifyContent: "left" ,p:'15px'}}>
                                         <Box>
-                                            <Typography align='center' sx={{ color: "#263238", fontSize: { lg: "25px", md: "25px", sm: "22px", xs: "18px" }, fontWeight: "800" }}>Step 1: Download and Signup </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Go to Play Store and Download the LuckyQuiz App </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> After download please read terms and condition and privacy.</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Then signup with mobile no, email id</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> You get otp just put that otp on signup page and your account is ready.</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Then fill your name make password, then click on signup. </Typography>
-                                            {/* <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography> */}
-
-
+                                            <Typography align='left' sx={{ color: "#424242", fontSize: { lg: "25px", md: "25px", sm: "22px", xs: "18px" }, fontWeight: "800" }}>Step 1: Download and Signup </Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green' }} />Go to the Play Store and download the LuckyQuiz App. </Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} /> After downloading, please read the terms and conditions and privacy policy.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" , color:'green' }} />Then sign up with your mobile number and email ID.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} /> You will receive an OTP; just input that OTP on the signup page, and your account will be ready.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" , color:'green' }} />Next, fill in your name, create a password, and click on signup. </Typography>
                                         </Box>
                                     </Grid>
 
                                 </Grid>
                             </Grid>
-
-
 
 
                             <Grid item xs={12} sx={{ mt: "10px", display: "flex", justifyContent: "center" }}>
                                 <Grid container xs={12} sm={12} md={10} lg={10} sx={{ p: "15px", bgcolor: "white", borderRadius: "30px", boxShadow: "-1px 2px 11px -4px rgba(0,0,0,0.75)" }}>
-                                    <Grid item xs={12} sm={12} md={6} lg={6} data-aos="fade-up" sx={{ display: "flex", p: "15px", alignItems: "center", justifyContent: "center" }}>
+                                    <Grid item xs={12} sm={12} md={12} lg={12} data-aos="fade-up" sx={{ display: "flex", p: "15px", alignItems: "center", justifyContent: "left"}}>
                                         <Box data-aos="fade-up">
-                                            <Typography align='center' sx={{ color: "#263238", fontSize: { lg: "25px", md: "25px", sm: "22px", xs: "18px" }, fontWeight: "800" }}>Step 2: If you already have an account</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Login to the App</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Please enter the E-mail and password correctly </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Then choose the game which u want to play</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />There is two variant 0 to 9, 0 to 99 </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Then add IQ in your wallet to play quiz</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Then use that IQ according your skills</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Choose the no. according to quiz</Typography>
-                                            {/* <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography> */}
-                                        </Box>
+                                            <Typography align='left' sx={{ color: "#424242", fontSize: { lg: "25px", m: "25px", sm: "22px", xs: "18px" }, fontWeight: "800",  }}>Step 2: If you already have an account</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Log in to the app.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />Please enter the email and password correctly.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} /> Next, choose the game you want to play.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />There are two variants: 0 to 9 and 0 to 99.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" , color:'green' }} />Add IQ to your wallet to play the quiz.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />Utilize that IQ based on your skills.</Typography>                                        </Box>
 
 
                                     </Grid>
-                                    <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: "center", alignItems: 'center' }} data-aos="fade-right">
+                                    {/* <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: "center", alignItems: 'center' }} data-aos="fade-right">
                                         <Box sx={{ width: { lg: '60%', md: '75%', sm: '55%', xs: '88%' }, height: { lg: '500px', md: "470px", sm: "430px", xs: "390px" } }}>
 
                                             <img src={game6} alt='game6' height={"100%"} width={"100%"} style={{ borderRadius: '10px' }} />
                                         </Box>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
 
 
-                            {/* <Grid item xs={12} sx={{ mt: "10px",display:"flex",justifyContent:"center" }}>
-                                <Grid container xs={12} sm={12} md={10} lg={10} sx={{bgcolor:"white",p:"15px",borderRadius:"30px",boxShadow:"-1px 2px 11px -4px rgba(0,0,0,0.75)"}} wrap='wrap-reverse'>
-                                    <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: "center", alignItems: 'center' }} data-aos="fade-right">
-                                        <Box sx={{ width: { lg: '60%', md: '75%', sm: '55%', xs: '88%' }, height: {lg:'500px',md:"470px",sm:"430px",xs:"390px"} }}>
+                            
+                          
 
-                                            <img src={game5} alt='game5' height={"100%"} width={"100%"} style={{ borderRadius: '10px' }} />
-                                        </Box>
-                                    </Grid>
 
-                                    <Grid item xs={12} sm={12} md={6} lg={6} data-aos="fade-up" sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                       
+                           
+
+
+
+                            <Grid item xs={12} sx={{ mt: "10px", display: "flex", justifyContent: "center" }}>
+                                <Grid container xs={12} sm={12} md={10} lg={10} sx={{p:'15px', bgcolor: "white", borderRadius: "30px", boxShadow: "-1px 2px 11px -4px rgba(0,0,0,0.75)" }}>
+                                    <Grid item xs={12} sm={12} md={12} lg={12} data-aos="fade-up" sx={{ display: "flex",p: "15px", alignItems: "center", justifyContent: "left" }}>
+
+
                                         <Box>
-                                        <Typography align='center' sx={{ color: "#263238", fontSize:{lg:"30px",md:"30px",sm:"25px",xs:"20px"}, fontWeight: "800" }}>Step 3: Choose the game you want to play</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",mt:"15px",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Choose the game you want to play from the home page</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Fill the details for make an account</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography>
+                                            <Typography align='left' sx={{ color: "#424242", fontSize: { lg: "25px", md: "25px", sm: "22px", xs: "18px" }, fontWeight: "800" }}>Step 3: Choose the game quiz</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />After choosing the game, select the color, size, and number for the quiz</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" , color:'green' }} />Choose a game that aligns with your skills.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />The 0 to 9 game has a 1-minute duration</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" , color:'green' }} />while the 0 to 99 game has a 5-minute duration.</Typography>
+                                            
 
 
                                         </Box>
                                     </Grid>
+                                    {/* <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: "center", alignItems: 'center' }} data-aos="fade-right">
+                                        <Box sx={{ width: { lg: '60%', md: '75%', sm: '55%', xs: '88%' }, height: { lg: '500px', md: "470px", sm: "430px", xs: "390px" } }}>
 
+                                            <img src={game4} alt='game4' height={"100%"} width={"100%"} style={{ borderRadius: '10px' }} />
+                                        </Box>
+                                    </Grid> */}
                                 </Grid>
-                            </Grid> */}
+                            </Grid>
 
 
 
                             <Grid item xs={12} sx={{ mt: "10px", display: "flex", justifyContent: "center" }}>
                                 <Grid container xs={12} sm={12} md={10} lg={10} sx={{ bgcolor: "white", p: "15px", borderRadius: "30px", boxShadow: "-1px 2px 11px -4px rgba(0,0,0,0.75)" }}>
-                                    <Grid item xs={12} sm={12} md={6} lg={6} data-aos="fade-up" sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-
-
-                                        <Box>
-                                            <Typography align='center' sx={{ color: "#263238", fontSize: { lg: "30px", md: "30px", sm: "25px", xs: "20px" }, fontWeight: "800" }}>Step 3: Choose the game quiz</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />After chossing the game, choose the color,size,number for  quiz</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Choose game according to your skills</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />0 to 9 have 1 minute game </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />0 to 99 game have 5 minutes game</Typography>
-                                            {/* <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography> */}
-
-
-                                        </Box>
-                                    </Grid>
-                                    <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: "center", alignItems: 'center' }} data-aos="fade-right">
-                                        <Box sx={{ width: { lg: '60%', md: '75%', sm: '55%', xs: '88%' }, height: { lg: '500px', md: "470px", sm: "430px", xs: "390px" } }}>
-
-                                            <img src={game4} alt='game4' height={"100%"} width={"100%"} style={{ borderRadius: '10px' }} />
-                                        </Box>
-                                    </Grid>
-                                </Grid>
-                            </Grid>
-
-
-
-                            <Grid item xs={12} sx={{ mt: "10px", display: "flex", justifyContent: "center" }}>
-                                <Grid container xs={12} sm={12} md={10} lg={10} sx={{ bgcolor: "white", p: "15px", borderRadius: "30px", boxShadow: "-1px 2px 11px -4px rgba(0,0,0,0.75)" }} wrap='wrap-reverse'>
-                                    <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: "center", alignItems: 'center' }} data-aos="fade-right">
+                                    {/* <Grid item xs={12} sm={12} md={6} lg={6} sx={{ mt: "20px", display: "flex", justifyContent: "center", alignItems: 'center' }} data-aos="fade-right">
                                         <Box sx={{ width: { lg: '60%', md: '75%', sm: '55%', xs: '88%' }, height: { lg: '500px', md: "470px", sm: "430px", xs: "390px" } }}>
 
                                             <img alt='game' src={game1} height={"100%"} width={"100%"} style={{ borderRadius: '10px' }} />
                                         </Box>
-                                    </Grid>
+                                    </Grid> */}
 
-                                    <Grid item xs={12} sm={12} md={6} lg={6} data-aos="fade-up" sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                    <Grid item xs={12} sm={12} md={12} lg={12} data-aos="fade-up" sx={{ display: "flex", alignItems: "center", justifyContent: "left", p:'15px' }}>
 
 
                                         <Box>
-                                            <Typography align='center' sx={{ color: "#263238", fontSize: { lg: "30px", md: "30px", sm: "25px", xs: "20px" }, fontWeight: "800" }}>Step 4: Check you result</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />After playing game check your result on result chart</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Result outcomes is based on your quiz</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />All result you get in chart </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />Number result first, then size then color.</Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} />You can match result accordingly</Typography>
-                                            {/* <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center",fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"} }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Typography>
-                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center" ,fontSize:{lg:"16px",md:"16px",sm:"14px",xs:"14px"}}}><CheckIcon sx={{ mr: "5px", fontSize: "18px" }} /> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </Typography> */}
+                                            <Typography align='left' sx={{ color: "#424242", fontSize: { lg: "25px", md: "25px", sm: "22px", xs: "18px" }, fontWeight: "800" }}>Step 4: Check you result</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", mt: "15px", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />After playing the game, check your result on the result chart.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px" , color:'green' }} />The outcome is based on your quiz performance.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />All results are displayed on the chart </Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />Number result first, then size then color.</Typography>
+                                            <Typography sx={{ color: "#546e7a", display: "flex", alignItems: "center", fontSize: { lg: "16px", md: "16px", sm: "14px", xs: "14px" } }}><CheckIcon sx={{ mr: "5px", fontSize: "18px", color:'green'  }} />You can match result accordingly</Typography>
+                                        
                                         </Box>
                                     </Grid>
 
@@ -466,7 +435,7 @@ const LandingPage = () => {
                                                         <img src={quote} alt="quote" height="35px" width="35px" />
                                                     </Typography>
                                                     <Box sx={{ height: "35%" }}>
-                                                        <Typography align='center' sx={{ fontSize: "15px", fontWeight: "500" }}>“I have played this game from so long this fully base pn u r abilty if you have good mathmatics best choice for you .”</Typography>
+                                                        <Typography align='center' sx={{ fontSize: "15px", fontWeight: "500" }}>“I have been playing this game for a long time. It is fully based on your ability, and if you have good mathematical skills, it is the best choice for you.”</Typography>
                                                     </Box>
                                                     <Box >
                                                         <Box sx={{ mt: "17px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -491,7 +460,7 @@ const LandingPage = () => {
                                                         <img src={quote} alt="quote" height="35px" width="35px" />
                                                     </Typography>
                                                     <Box sx={{ height: "35%" }}>
-                                                        <Typography align='center' sx={{ fontSize: "15px", fontWeight: "500" }}>"Best game in playing just solve the quiz and win easy withdrawls and deposit"</Typography>
+                                                        <Typography align='center' sx={{ fontSize: "15px", fontWeight: "500" }}>"The best game to play – simply solve quizzes and enjoy easy withdrawals and deposits."</Typography>
                                                     </Box>
                                                     <Box>
                                                         <Box sx={{ mt: "17px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -516,7 +485,7 @@ const LandingPage = () => {
                                                         <img src={quote} alt="quote" height="35px" width="35px" />
                                                     </Typography>
                                                     <Box sx={{ height: "35%" }}>
-                                                        <Typography align='center' sx={{ fontSize: "15px", fontWeight: "500" }}>“This best game i have played so far no luck by chance all on base of ur talent”</Typography>
+                                                        <Typography align='center' sx={{ fontSize: "15px", fontWeight: "500" }}>“This is the best game I have played so far; no luck by chance, all based on your talent.”</Typography>
                                                     </Box>
                                                     <Box>
                                                         <Box sx={{ mt: "17px", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -551,26 +520,7 @@ const LandingPage = () => {
                                             </Typography>
                                         </Box>
                                         <Box sx={{ mt: '15px' }}>
-                                            {/* <Accordion elevation={1} >
-                                                <AccordionSummary
-                                                    expandIcon={<ExpandMoreIcon />}
-                                                    aria-controls="panel1a-content"
-                                                    id="panel1a-header"
-                                                    sx={{ p: "0px 8px" }}>
-                                                    <Typography sx={{ color: "black", fontSize: { lg: "16px", md: "15px", sm: "15px", xs: "12px" }, fontWeight: "bold" }}>
-                                                      From Where can I download game?
-                                                    </Typography>
-                                                </AccordionSummary>
-                                                <AccordionDetails>
-
-                                                    <ul>
-                                                        <li style={{ fontSize: "12px", marginTop: "-30px" }}>You can download it from play store / App store or whatever store your mobile support </li>
-                                                        <li style={{ fontSize: "12px" }}>ou can download it directly from google</li>
-                                                        <li style={{ fontSize: "12px" }}>You can take apk from your or person who have the game</li>
-                                                    </ul>
-
-                                                </AccordionDetails>
-                                            </Accordion> */}
+                                           
 
 
 
@@ -588,9 +538,9 @@ const LandingPage = () => {
                                                 <AccordionDetails>
 
                                                     <ul>
-                                                        <li style={{ fontSize: "12px", marginTop: "-30px" }}>Firstly you have to register yourself.</li>
-                                                        <li style={{ fontSize: "12px" }}>Then login into the game and choose the game you want to play.</li>
-                                                        <li style={{ fontSize: "12px" }}>Then deposite IQ in the game through deposite button when you have IQ in your wallet you can play the game.</li>
+                                                        <li style={{ fontSize: "12px", marginTop: "-30px" }}>Firstly, you have to register yourself.</li>
+                                                        <li style={{ fontSize: "12px" }}>Then, log in to the game and choose the game you want to play.</li>
+                                                        <li style={{ fontSize: "12px" }}>After that, deposit IQ in the game through the deposit button. Once you have IQ in your wallet, you can play the game.</li>
                                                     </ul>
 
                                                 </AccordionDetails>
@@ -612,7 +562,7 @@ const LandingPage = () => {
 
                                                     <ul>
                                                         <li style={{ fontSize: "12px", marginTop: "-30px" }}>No its live game you can,t save the game</li>
-                                                        
+
                                                     </ul>
 
                                                 </AccordionDetails>
@@ -633,13 +583,13 @@ const LandingPage = () => {
 
                                                     <ul>
                                                         <li style={{ fontSize: "12px", marginTop: "-30px" }}>Reason should be your internet conection or your system is not working please check.</li>
-                                                        
+
                                                     </ul>
 
                                                 </AccordionDetails>
                                             </Accordion>
 
-                                           
+
                                         </Box>
                                     </Box>
                                 </Grid>
@@ -746,8 +696,8 @@ const LandingPage = () => {
 
 
                 {/* footer section */}
-                 <FooterComp/>
-               
+                <FooterComp />
+
 
             </Container>
         </>
